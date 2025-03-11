@@ -33,7 +33,7 @@ int main() { // Главная функция
     vector<vector<int>> result1 = findZeroSumSubarrays(arr1, K1);
     assert(result1.size() == 2); // Существует два подмассива размера 2 с суммой 0: {0, 1}, {2, 3}
     
-    // Проверка
+    // Проверка содержимого
     vector<vector<int>> expected1 = {{0, 1}, {2, 3}};
     assert(result1 == expected1);
 
@@ -43,11 +43,11 @@ int main() { // Главная функция
     vector<vector<int>> result2 = findZeroSumSubarrays(arr2, K2);
     assert(result2.size() == 3); // Существует три подмассива размера 4 с суммой 0
 
-    // Проверка
+    // Проверка содержимого
     vector<vector<int>> expected2 = {{0, 1, 2, 3}, {0, 1, 4, 5}, {2, 3, 4, 5}};
     assert(result2 == expected2);
 
     cout << "Все тесты пройдены успешно!" << endl;
 
-    return 0;
+    return 0; // Завершение программы
 }
